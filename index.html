@@ -4,13 +4,18 @@
 <title>For Sol's Birthday :D</title>
 
 <style>
-
-
 body{
   background:#0f0f14;
   color:white;
   font-family:Arial;
   text-align:center;
+}
+
+.birthday-message{
+  max-width:600px;
+  margin:20px auto 0 auto;
+  opacity:0.9;
+  line-height:1.6;
 }
 
 .container{
@@ -49,22 +54,9 @@ a{
   text-decoration:none;
   color:white;
 }
-</style>
-</head>
-  <script>
-const amount = 40;
 
-for(let i=0;i<amount;i++){
-  const star = document.createElement("div");
-  star.className="star";
-
-  star.style.left=Math.random()*100+"vw";
-  star.style.animationDelay=Math.random()*5+"s";
-  star.style.animationDuration=3+Math.random()*5+"s";
-
-  document.body.appendChild(star);
-}
-    .star{
+/* falling stars */
+.star{
   position:fixed;
   top:-10px;
   width:3px;
@@ -81,13 +73,24 @@ for(let i=0;i<amount;i++){
     opacity:0;
   }
 }
+</style>
+</head>
 
-    
-</script>
 <body>
 
 <h1>For Sol's Birthday!</h1>
 <p>Click any song :p</p>
+
+<div class="birthday-message">
+  <h2>Happy Birthday Sol :DDDD <3 </h2>
+  <p>
+  I made this website when u told me your birthday was coming up..
+  something you can revisit for funsies or when ur sad. 
+  I know we just met but I thought this would be cool... I haven't coded in a whiel so-
+  <br><br>
+  Each song is a memory or a feeling you gave me ^_^
+  </p>
+</div>
 
 <div class="container">
 
@@ -114,6 +117,21 @@ for(let i=0;i<amount;i++){
   <img src="images/us.jpg" class="sideimg">
 
 </div>
+
+<script>
+const amount = 40;
+
+for(let i=0;i<amount;i++){
+  const star = document.createElement("div");
+  star.className="star";
+
+  star.style.left=Math.random()*100+"vw";
+  star.style.animationDelay=Math.random()*5+"s";
+  star.style.animationDuration=3+Math.random()*5+"s";
+
+  document.body.appendChild(star);
+}
+</script>
 
 </body>
 </html>
