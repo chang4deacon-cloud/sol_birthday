@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>For Sol's Birthday :D</title>
+
 <style>
 body{
   background:#0f0f14;
@@ -9,6 +10,30 @@ body{
   font-family:Arial;
   text-align:center;
 }
+
+/* layout */
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  margin-top:40px;
+}
+
+/* side photos */
+.sideimg{
+  width:200px;
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(255,255,255,0.15);
+}
+
+/* cards column */
+.cards{
+  display:flex;
+  flex-direction:column;
+}
+
+/* song buttons */
 .card{
   background:#1c1c25;
   padding:20px;
@@ -17,9 +42,11 @@ body{
   border-radius:15px;
   transition:0.3s;
 }
+
 .card:hover{
   transform:scale(1.05);
 }
+
 a{
   text-decoration:none;
   color:white;
@@ -32,18 +59,33 @@ a{
 <h1>For Sol's Birthday!</h1>
 <p>Click any memory</p>
 
-<div class="card">
-<a href="song1.html">
-<h2>Happiness</h2>
-<p>The day I was sad</p>
-</a>
-</div>
+<div class="container">
 
-<div class="card">
-<a href="song2.html">
-<h2>Song Name</h2>
-<p>The way you laugh</p>
-</a>
+  <!-- left photo -->
+  <img src="images/BIRTHDAY.jpg" class="sideimg">
+
+  <!-- buttons -->
+  <div class="cards">
+
+    <div class="card">
+    <a href="song1.html">
+    <h2>Happiness</h2>
+    <p>The day I was sad</p>
+    </a>
+    </div>
+
+    <div class="card">
+    <a href="song2.html">
+    <h2>Song Name</h2>
+    <p>The way you laugh</p>
+    </a>
+    </div>
+
+  </div>
+
+  <!-- right photo -->
+  <img src="images/us.jpg" class="sideimg">
+
 </div>
 
 </body>
