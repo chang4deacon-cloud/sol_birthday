@@ -1,15 +1,15 @@
 <!DOCTYPE html>
+
 <html>
 
 <body style="background:#0f0f14;color:white;font-family:Arial;text-align:center;padding:40px;">
 
-<h1>Glue Song- Beabadoobee!</h1>
+<h1>Glue Song — Beabadoobee</h1>
 
 <iframe style="border-radius:12px"
 src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf"
 width="100%" height="352"
 frameBorder="0"
-allowfullscreen
 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 loading="lazy">
 </iframe>
@@ -18,14 +18,43 @@ loading="lazy">
 
 <img src="us.jpg" style="width:260px;border-radius:18px;margin-top:25px;box-shadow:0 0 25px rgba(255,255,255,0.15);">
 
-
 <p style="max-width:500px;margin:auto;margin-top:25px;font-size:18px;line-height:1.6;">
-ThIS SONG IS SO US
+THIS SONG IS SO US
+
 <br><br>
-IDK if you like bea, but this is just so like safe and secure core.. AND LIKE uh funsies. 
+
+IDK if you like Bea, but this just feels safe and fun at the same time.
 
 </p>
+
+<!-- Reaction Button -->
+
+<button onclick="reaction()"
+style="
+margin-top:25px;
+padding:12px 22px;
+background:#2a2f44;
+border:none;
+border-radius:12px;
+color:white;
+cursor:pointer;
+font-size:15px;
+transition:0.2s;
+"
+onmouseover="this.style.transform='scale(1.08)'"
+onmouseout="this.style.transform='scale(1)'">
+react </button>
+
+<!-- Progress -->
+
+<p style="opacity:0.5;margin-top:40px;">
+Song 2 of 4
+</p>
+
+<br>
+
 <!-- Back Button -->
+
 <a href="index.html"
 style="
 display:inline-block;
@@ -40,8 +69,14 @@ box-shadow:0 0 15px rgba(255,255,255,0.08);
 "
 onmouseover="this.style.background='#2a2f44'"
 onmouseout="this.style.background='#1f2230'">
-← Back to home!
-</a>
+← Back to home! </a>
+
+<script>
+function reaction(){
+  alert("this is exactly how talking to you feels");
+}
+</script>
 
 </body>
 </html>
+
