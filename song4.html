@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 
 <html>
+<script>
+for(let i=0;i<15;i++){
+  const heart=document.createElement("div");
+  heart.innerHTML="❤";
+  heart.style.position="fixed";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.top="110vh";
+  heart.style.opacity=0.15;
+  heart.style.fontSize=(12+Math.random()*20)+"px";
+  heart.style.animation=`float ${5+Math.random()*6}s linear infinite`;
+  document.body.appendChild(heart);
+}
+</script>
+
+<style>
+@keyframes float{
+  to{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+}
+</style>
 
 <body style="background:#0f0f14;color:white;font-family:Arial;text-align:center;padding:40px;">
 
